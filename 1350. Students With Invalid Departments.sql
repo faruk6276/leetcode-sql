@@ -1,0 +1,1 @@
+SELECT s.id,s.name FROM Students as s LEFT Join Departments as d on s.department_id=d.id where d.id is NULL
