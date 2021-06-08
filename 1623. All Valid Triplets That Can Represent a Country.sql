@@ -1,0 +1,1 @@
+SELECT a.student_name as memberA,b.student_name as memberB,c.student_name as memberC  FROM SchoolA  as a INNER JOIN SchoolB as b ON( a.student_id!=b.student_id AND a.student_name != b.student_name ) INNER JOIN SchoolC as c ON( a.student_id!=c.student_id AND a.student_name != c.student_name) and ( b.student_id!=c.student_id AND b.student_name != c.student_name)
